@@ -4,7 +4,7 @@
   "description": "A user card heavily inspired by Google's Material Design concept written with ReactJS.",
   "author": "Brian Tomlinson <darthlukan@gmail.com> (https://www.brianctomlinson.com)",
   "main": "index.js",
-  "files": ["card.css"],
+  "files": ["card.css", "index.js"],
   "repository": {
     "type": "git",
     "url": "git://github.com/darthlukan/react-user-card.git"
