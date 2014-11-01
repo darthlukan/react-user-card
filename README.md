@@ -13,6 +13,7 @@ written as a [ReactJS](http://facebook.github.io/react/) component.
 
 > * Package for NPM/Bower/whatever the JS users are using nowadays
 > * Optional color params for title background and title font
+> * Fix CSS inclusion, copying files from installation paths is janky
 > * Better behavior on mobile screens, current media queries aren't really good enough
 > * Cleanups
 
@@ -34,6 +35,10 @@ written as a [ReactJS](http://facebook.github.io/react/) component.
         content: '<Text goes here, maybe a description, or a comment, etc.>'
     }), document.getElementById('<card-holder ID>'));
 ```
+
+> NOTE: If you want a styled card, you'll have to copy the ```card.css``` file
+> from wherever you're installing your npm modules and include it in your HTML
+> files. I'm looking into a better method for this.
 
 ## License
 > MIT, see LICENSE file
