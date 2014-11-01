@@ -18276,12 +18276,44 @@ module.exports=require('nakDgH');
 var React = require('react');
 var R = React.DOM;
 
-ExampleApp = React.createClass({displayName: 'ExampleApp',
+var CardHeader = React.createClass({displayName: 'CardHeader',
     render: function() {
-        return R.h2({className: 'hi'}, "Hello World!");
+        return R.div({className: 'card-header'}, [
+            R.img({id: 'user-img', src: this.props.userimg}),
+            R.h3({id: 'username-title'}, this.props.username)
+        ]);
     }
 });
 
-React.render(ExampleApp(), document.getElementById('app'));
+var CardContent = React.createClass({displayName: 'CardContent',
+    render: function() {
+        return R.div(
+            {className: 'card-content'}, 
+            R.p({id: 'card-text'}, this.props.text)
+        );
+    }
+});
 
-},{"react":"nakDgH"}]},{},[149])
+var Card = React.createClass({displayName: 'Card',
+    render: function() {
+        return R.div({className: 'card'}, [
+            CardHeader({userimg: this.props.userimg, username: this.props.username}),
+            CardContent({text: this.props.content})
+        ]);
+    }
+});
+
+module.exports = Card;
+},{"react":"nakDgH"}],150:[function(require,module,exports){
+'use strict';
+
+var React = require('react');
+var Card = React.createFactory(require('./components/card.js'));
+
+React.render(Card({
+    userimg: 'http://www.gravatar.com/avatar/6a8561ee5706d17a4382a391720db523.png',
+    username: 'Username',
+    content: 'Text goes here, maybe a description, or a comment.  Anything really :)'
+}), document.getElementById('app'));
+
+},{"./components/card.js":149,"react":"nakDgH"}]},{},[150])
