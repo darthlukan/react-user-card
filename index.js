@@ -65,7 +65,7 @@ var Card = React.createClass({
             };
         }
 
-        return R.div({className: 'card'}, [
+        return R.div({className: 'card', style: this.props.cardStyle}, [
             CardHeader({userimg: this.props.userimg, username: this.props.username, style: this.props.headerStyle}),
             CardContent({text: this.props.content, style: this.props.contentStyle})
         ]);
