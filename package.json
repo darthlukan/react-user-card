@@ -1,13 +1,13 @@
 {
   "name": "react-user-card",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A user card heavily inspired by Google's Material Design concept written with ReactJS.",
   "author": "Brian Tomlinson <darthlukan@gmail.com> (https://www.brianctomlinson.com)",
   "main": "index.js",
   "files": ["index.js"],
   "repository": {
     "type": "git",
-    "url": "git://github.com/darthlukan/react-user-card.git#v0.1.0"
+    "url": "git://github.com/darthlukan/react-user-card.git#v0.1.1"
   },
   "keywords": [
     "react-component",
