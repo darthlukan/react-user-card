@@ -1,4 +1,5 @@
 .git
-src/bower_components
 node_modules
-/dist
+index.html
+app.js
+bundle.js
