@@ -46,7 +46,7 @@ var Card = React.createClass({
                 boxShadow: '.25px .25px 5px .25px',
                 borderRadius: '2px 2px 2px 2px',
                 zIndex: 5
-            }
+            };
         }
 
         if (!this.props.headerStyle) {
@@ -55,14 +55,14 @@ var Card = React.createClass({
                 padding: '1%',
                 color: '#eceff1',
                 position: 'relative'
-            }
+            };
         }
 
         if (!this.props.contentStyle) {
             this.props.contentStyle = {
                 color: 'rgb(0, 0, 0, 0.54)',
                 padding: '2%'
-            }
+            };
         }
 
         return R.div({className: 'card'}, [
